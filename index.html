@@ -267,22 +267,33 @@ footer{border-top:1px solid var(--rule);padding:30px 0;font-family:var(--mono);f
   </section>
 
   <!-- Penawaran / Pricing -->
- <iframe id="myiframe" width="100%" frameborder="0" src="https://mindbookk.my.id/checkout-flow-baru-2"></iframe><script>const iframe=document.getElementById('myiframe')
-        function resizeIframe(height){iframe.style.height=height+'px'}
-        function isUrl(string){try{new URL(string)
-        return true}catch(_){return false}}
-        function isJSONObject(string){try{const parsed=JSON.parse(string)
-        return typeof parsed==='object'&&parsed!==null}catch(e){return false}}
-        function isIframeSameOrigin(){try{const doc=iframe.contentDocument||iframe.contentWindow.document
-        return true}catch(e){return false}}
-        window.addEventListener('message',function(e){if(e.origin==='https://mindbookk.my.id'){if(isUrl(e.data)){location.href=e.data}
-        if(isJSONObject(e.data)&&!isIframeSameOrigin()){const message=JSON.parse(e.data)
-        if(message.type==='resize'){resizeIframe(message.height)}}}},false)
-        document.addEventListener('DOMContentLoaded', function () {var observer = new IntersectionObserver(function (entries) {
-        entries.forEach((entry) => {if (entry.isIntersecting) {
-        iframe.src = iframe.src
-        observer.disconnect()}})})
-        observer.observe(iframe)})</script>
+  <section class="section-block" id="perjanjian">
+    <div class="text">
+      <div class="pact">
+        <p class="head">Daftar Paket Penawaran Spesial</p>
+        <h2>Penawaran Terbatas Hari Ini</h2>
+        <ul class="ledger">
+          <li><span class="tag">UTAMA</span><span class="item">Ebook Hipnotis Wanita Dalam 7 Detik</span><span class="val">Rp 397.000</span></li>
+          <li><span class="tag">BONUS 1</span><span class="item">50+ Skrip Pesan Pemikat Emosi</span><span class="val">Rp 149.000</span></li>
+          <li><span class="tag">BONUS 2</span><span class="item">Panduan Bahasa Tubuh Pria Berdaya Tarik High-Value</span><span class="val">Rp 199.000</span></li>
+          <li><span class="tag">BONUS 3</span><span class="item">Cheat Sheet Rahasia Percakapan 7 Detik</span><span class="val">Rp 79.000</span></li>
+        </ul>
+        <div class="sum"><span>Total nilai materi</span><s>Rp 824.000</s></div>
+        
+        <div class="final-price">
+          <span class="badge">DISKON SPESIAL</span>
+          <div class="lbl">Hanya cukup investasi</div>
+          <div class="amt"><small>Rp</small>99.000</div>
+        </div>
+
+        <div style="text-align: center; margin-top: 24px;">
+          <a class="cta" href="https://digiverse.orderanku.id/japan/bayar" target="_blank" rel="noopener" style="width: 100%;">BELI SEKARANG<small>Akses Instan Ebook & Bonus</small></a>
+        </div>
+
+        <p class="pay">Akses Instan · Pembayaran Bank / QRIS / E-Wallet</p>
+      </div>
+    </div>
+  </section>
   <!-- Penutup -->
   <section class="closing">
   </section>
